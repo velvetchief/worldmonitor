@@ -366,6 +366,70 @@ export const VARIANT_FEEDS: Record<string, Record<string, ServerFeed[]>> = {
     ],
   },
 
+  marketject: {
+    markets: [
+      { name: 'CNBC', url: 'https://www.cnbc.com/id/100003114/device/rss/rss.html' },
+      { name: 'MarketWatch', url: gn('site:marketwatch.com markets when:1d') },
+      { name: 'Yahoo Finance', url: 'https://finance.yahoo.com/rss/topstories' },
+      { name: 'Seeking Alpha', url: 'https://seekingalpha.com/market_currents.xml' },
+      { name: 'Reuters Markets', url: gn('site:reuters.com markets stocks when:1d') },
+      { name: 'Bloomberg Markets', url: gn('site:bloomberg.com markets when:1d') },
+      { name: 'NDTV Business', url: gn('site:ndtv.com business markets when:1d') },
+    ],
+    strategy: [
+      { name: 'Harvard Business Review', url: gn('site:hbr.org when:7d') },
+      { name: 'McKinsey', url: gn('site:mckinsey.com when:7d') },
+      { name: 'Fortune', url: gn('site:fortune.com CEO OR leadership OR strategy when:2d') },
+      { name: 'Forbes Leadership', url: gn('site:forbes.com CEO OR leadership OR "business strategy" when:2d') },
+      { name: 'WSJ Business', url: gn('site:wsj.com business strategy OR CEO OR leadership when:2d') },
+    ],
+    tech: [
+      { name: 'TechCrunch', url: 'https://techcrunch.com/feed/' },
+      { name: 'The Verge', url: 'https://www.theverge.com/rss/index.xml' },
+      { name: 'Ars Technica', url: 'https://feeds.arstechnica.com/arstechnica/technology-lab' },
+      { name: 'MIT Tech Review', url: gn('site:technologyreview.com when:3d') },
+      { name: 'NDTV Tech', url: gn('site:ndtv.com gadgets OR tech when:1d') },
+      { name: 'CNBC Tech', url: gn('site:cnbc.com technology when:1d') },
+    ],
+    ai: [
+      { name: 'AI Industry', url: gn('(OpenAI OR Anthropic OR "Google DeepMind" OR Meta AI) when:2d') },
+      { name: 'VentureBeat AI', url: gn('site:venturebeat.com AI when:2d') },
+      { name: 'AI Research', url: gn('("large language model" OR "foundation model" OR "generative AI") when:3d') },
+      { name: 'AI Business', url: gn('("AI startup" OR "AI funding" OR "AI enterprise" OR "AI adoption") when:3d') },
+    ],
+    security: [
+      { name: 'Krebs on Security', url: 'https://krebsonsecurity.com/feed/' },
+      { name: 'The Hacker News', url: 'https://feeds.feedburner.com/TheHackersNews' },
+      { name: 'Dark Reading', url: 'https://www.darkreading.com/rss.xml' },
+      { name: 'Cyber Incidents', url: gn('("data breach" OR "ransomware attack" OR "cyber attack" OR "security incident") when:2d') },
+    ],
+    geopolitics: [
+      { name: 'Al Jazeera', url: 'https://www.aljazeera.com/xml/rss/all.xml' },
+      { name: 'Foreign Policy', url: 'https://foreignpolicy.com/feed/' },
+      { name: 'Foreign Affairs', url: 'https://www.foreignaffairs.com/rss.xml' },
+      { name: 'Geopolitical Risk', url: gn('("geopolitical risk" OR "geopolitical tension" OR "international conflict") when:2d') },
+      { name: 'Sanctions', url: gn('(sanctions OR "trade war" OR embargo OR "export ban") when:2d') },
+    ],
+    regulation: [
+      { name: 'SEC & FTC', url: gn('(SEC OR FTC OR "antitrust" OR "regulatory action") tech OR finance when:3d') },
+      { name: 'AI Regulation', url: gn('("AI regulation" OR "AI act" OR "AI policy" OR "AI governance") when:3d') },
+      { name: 'Trade Policy', url: gn('("trade war" OR tariff OR "trade policy" OR "export controls") when:2d') },
+    ],
+    ipo: [
+      { name: 'IPO News', url: gn('(IPO OR "initial public offering" OR "going public") when:3d') },
+      { name: 'Earnings', url: gn('("earnings report" OR "quarterly results" OR "beat estimates" OR "revenue growth") when:2d') },
+      { name: 'M&A News', url: gn('("merger" OR "acquisition" OR "buyout" OR "takeover bid") when:3d') },
+    ],
+    analysis: [
+      { name: 'Market Outlook', url: gn('("market outlook" OR "market forecast" OR "bull market" OR "bear market") when:3d') },
+      { name: 'Bank Research', url: gn('("Goldman Sachs" OR "Morgan Stanley" OR "JP Morgan") outlook OR forecast OR downgrade when:3d') },
+    ],
+    macro: [
+      { name: 'Central Banks', url: gn('("central bank" OR "interest rate" OR "rate decision" OR "monetary policy") when:2d') },
+      { name: 'Federal Reserve', url: gn('("Federal Reserve" OR "Fed rate" OR FOMC OR "Jerome Powell") when:2d') },
+      { name: 'Economic Data', url: gn('(CPI OR GDP OR PMI OR "jobs report" OR "inflation data") when:2d') },
+    ],
+  },
   happy: {
     positive: [
       { name: 'Good News Network', url: 'https://www.goodnewsnetwork.org/feed/' },
