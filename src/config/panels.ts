@@ -778,8 +778,8 @@ const COMMODITY_MOBILE_MAP_LAYERS: MapLayers = {
 // MARKETJECT VARIANT (CEO Intelligence)
 // ============================================
 const MARKETJECT_PANELS: Record<string, PanelConfig> = {
-  map: { name: 'MarketJect Map', enabled: true, priority: 1 },
   'live-news': { name: 'CEO Briefing', enabled: true, priority: 1 },
+  map: { name: 'MarketJect Map', enabled: true, priority: 1 },
   insights: { name: 'AI Insights', enabled: true, priority: 1 },
   markets: { name: 'Live Markets', enabled: true, priority: 1 },
   'macro-signals': { name: 'Macro Signals', enabled: true, priority: 1 },

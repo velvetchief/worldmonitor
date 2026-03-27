@@ -98,8 +98,8 @@ export const FEEDS: Record<string, Feed[]> = {
 
 // Panel configuration for MarketJect (CEO Intelligence)
 export const DEFAULT_PANELS: Record<string, PanelConfig> = {
-  map: { name: 'MarketJect Map', enabled: true, priority: 1 },
   'live-news': { name: 'CEO Briefing', enabled: true, priority: 1 },
+  map: { name: 'MarketJect Map', enabled: true, priority: 1 },
   insights: { name: 'AI Insights', enabled: true, priority: 1 },
   markets: { name: 'Live Markets', enabled: true, priority: 1 },
   'macro-signals': { name: 'Macro Signals', enabled: true, priority: 1 },
