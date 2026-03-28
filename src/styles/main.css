@@ -17705,6 +17705,30 @@ body.has-breaking-alert .panels-grid {
   }
 }
 
+/* ── MarketJect variant: panels left, map right ── */
+@media (min-width: 1600px) {
+  [data-variant="marketject"] .main-content {
+    grid-template-columns: 1fr 60%;
+  }
+
+  [data-variant="marketject"] .map-section {
+    grid-column: 2;
+  }
+
+  [data-variant="marketject"] .panels-grid {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  [data-variant="marketject"] .main-content.map-hidden {
+    grid-template-columns: 1fr;
+  }
+
+  [data-variant="marketject"] .main-content.map-hidden .panels-grid {
+    grid-column: 1;
+  }
+}
+
 /* ==========================================================================
    Telegram Intel Panel
    ========================================================================== */
